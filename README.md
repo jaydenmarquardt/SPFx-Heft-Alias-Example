@@ -70,13 +70,7 @@ module.exports = function patchWebpackConfig(webpackConfig) {
 
   const aliases = {
     "@components": path.resolve(root, "lib/components"),
-    "@hooks": path.resolve(root, "lib/hooks"),
-    "@lib": path.resolve(root, "lib/lib"),
-    "@configs": path.resolve(root, "lib/configs"),
-    "@styles": path.resolve(root, "lib/styles"),
     "@webparts": path.resolve(root, "lib/webparts"),
-    "@props": path.resolve(root, "lib/propertyFields"),
-    "@pnp$": path.resolve(root, "lib/lib/pnp"),
   };
 
   webpackConfig.resolve = webpackConfig.resolve || {};
@@ -108,4 +102,3 @@ npm run build
 - [config/webpack-patch/aliases.js](config/webpack-patch/aliases.js)
 - [src/components/example.tsx](src/components/example.tsx)
 - [src/webparts/example/ExampleWebpart.ts](src/webparts/example/ExampleWebpart.ts)
-# SPFx-Heft-Alias-Example
